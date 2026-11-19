@@ -1,0 +1,62 @@
+{
+    "model_name": "SwasthyaSetu Diabetes LSTM",
+    "dataset_type": "synthetic",
+    "is_real_patient_data": false,
+    "test_samples": 9000,
+    "metrics": {
+        "fasting_glucose": {
+            "MAE": 2.6303160190582275,
+            "RMSE": 3.2905958502221924,
+            "R2": 0.8595619797706604,
+            "actual_mean": 88.05023956298828,
+            "predicted_mean": 88.19075012207031,
+            "actual_min": 65.0,
+            "actual_max": 129.25999450683594,
+            "predicted_min": 65.63190460205078,
+            "predicted_max": 117.67029571533203
+        },
+        "post_meal_glucose": {
+            "MAE": 4.7935614585876465,
+            "RMSE": 6.010478089369678,
+            "R2": 0.7166744470596313,
+            "actual_mean": 123.12010955810547,
+            "predicted_mean": 123.24150085449219,
+            "actual_min": 85.0,
+            "actual_max": 169.2100067138672,
+            "predicted_min": 96.49824523925781,
+            "predicted_max": 156.8951416015625
+        },
+        "hba1c": {
+            "MAE": 0.10533299297094345,
+            "RMSE": 0.1324190595209371,
+            "R2": 0.9346943497657776,
+            "actual_mean": 5.064664363861084,
+            "predicted_mean": 5.068859577178955,
+            "actual_min": 4.0,
+            "actual_max": 7.510000228881836,
+            "predicted_min": 3.9252371788024902,
+            "predicted_max": 6.916727066040039
+        }
+    },
+    "prediction_checks": {
+        "fasting_glucose": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 65.63190460205078,
+            "maximum_prediction": 117.67029571533203
+        },
+        "post_meal_glucose": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 96.49824523925781,
+            "maximum_prediction": 156.8951416015625
+        },
+        "hba1c": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 3.9252371788024902,
+            "maximum_prediction": 6.916727066040039
+        }
+    },
+    "disclaimer": "Experimental forecasting model evaluated using synthetic test data. Not clinically validated."
+}

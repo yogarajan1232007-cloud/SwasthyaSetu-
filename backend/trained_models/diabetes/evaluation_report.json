@@ -1,0 +1,343 @@
+{
+    "model_type": "diabetes_classification",
+    "dataset_type": "synthetic",
+    "validation_status": "experimental",
+    "approval_status": "pending",
+    "is_active": false,
+    "selected_model": "Logistic Regression",
+    "selection_metric": "validation_macro_f1",
+    "feature_columns": [
+        "age",
+        "bmi",
+        "waist_cm",
+        "fasting_glucose",
+        "post_meal_glucose",
+        "hba1c"
+    ],
+    "target_column": "synthetic_demo_category",
+    "split": {
+        "training": 0.7,
+        "validation": 0.15,
+        "testing": 0.15
+    },
+    "cross_validation": {
+        "Logistic Regression": {
+            "mean_macro_f1": 0.8016201458071903,
+            "best_parameters": {
+                "classifier__solver": "lbfgs",
+                "classifier__C": 10.0
+            }
+        },
+        "Random Forest": {
+            "mean_macro_f1": 0.7898445977925842,
+            "best_parameters": {
+                "n_estimators": 250,
+                "min_samples_split": 2,
+                "min_samples_leaf": 2,
+                "max_depth": 8
+            }
+        },
+        "Gradient Boosting": {
+            "mean_macro_f1": 0.7877771597811224,
+            "best_parameters": {
+                "subsample": 0.8,
+                "n_estimators": 100,
+                "max_depth": 4,
+                "learning_rate": 0.03
+            }
+        }
+    },
+    "validation_results": {
+        "Logistic Regression": {
+            "accuracy": 0.7786666666666666,
+            "balanced_accuracy": 0.7785185185185185,
+            "precision_macro": 0.794335403267539,
+            "recall_macro": 0.7785185185185185,
+            "f1_macro": 0.7846900134045907,
+            "roc_auc_ovr_macro": 0.9213417107583775,
+            "log_loss": 0.4949694117619091,
+            "multiclass_brier_score": 0.30623320730536574,
+            "confusion_matrix": [
+                [
+                    335,
+                    115,
+                    0
+                ],
+                [
+                    65,
+                    468,
+                    67
+                ],
+                [
+                    0,
+                    85,
+                    365
+                ]
+            ],
+            "classification_report": {
+                "Low": {
+                    "precision": 0.8375,
+                    "recall": 0.7444444444444445,
+                    "f1-score": 0.788235294117647,
+                    "support": 450.0
+                },
+                "Medium": {
+                    "precision": 0.7005988023952096,
+                    "recall": 0.78,
+                    "f1-score": 0.7381703470031545,
+                    "support": 600.0
+                },
+                "High": {
+                    "precision": 0.8449074074074074,
+                    "recall": 0.8111111111111111,
+                    "f1-score": 0.8276643990929705,
+                    "support": 450.0
+                },
+                "accuracy": 0.7786666666666666,
+                "macro avg": {
+                    "precision": 0.794335403267539,
+                    "recall": 0.7785185185185185,
+                    "f1-score": 0.7846900134045907,
+                    "support": 1500.0
+                },
+                "weighted avg": {
+                    "precision": 0.784961743180306,
+                    "recall": 0.7786666666666666,
+                    "f1-score": 0.7800380467644471,
+                    "support": 1500.0
+                }
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.7606666666666667,
+            "balanced_accuracy": 0.7659259259259259,
+            "precision_macro": 0.7684969512593222,
+            "recall_macro": 0.7659259259259259,
+            "f1_macro": 0.7670677802203479,
+            "roc_auc_ovr_macro": 0.9145707231040564,
+            "log_loss": 0.5168516168248439,
+            "multiclass_brier_score": 0.3209055612494675,
+            "confusion_matrix": [
+                [
+                    344,
+                    106,
+                    0
+                ],
+                [
+                    86,
+                    428,
+                    86
+                ],
+                [
+                    2,
+                    79,
+                    369
+                ]
+            ],
+            "classification_report": {
+                "Low": {
+                    "precision": 0.7962962962962963,
+                    "recall": 0.7644444444444445,
+                    "f1-score": 0.780045351473923,
+                    "support": 450.0
+                },
+                "Medium": {
+                    "precision": 0.6982055464926591,
+                    "recall": 0.7133333333333334,
+                    "f1-score": 0.7056883759274526,
+                    "support": 600.0
+                },
+                "High": {
+                    "precision": 0.810989010989011,
+                    "recall": 0.82,
+                    "f1-score": 0.8154696132596685,
+                    "support": 450.0
+                },
+                "accuracy": 0.7606666666666667,
+                "macro avg": {
+                    "precision": 0.7684969512593222,
+                    "recall": 0.7659259259259259,
+                    "f1-score": 0.7670677802203479,
+                    "support": 1500.0
+                },
+                "weighted avg": {
+                    "precision": 0.7614678107826558,
+                    "recall": 0.7606666666666667,
+                    "f1-score": 0.7609298397910585,
+                    "support": 1500.0
+                }
+            }
+        },
+        "Gradient Boosting": {
+            "accuracy": 0.7686666666666667,
+            "balanced_accuracy": 0.7681481481481481,
+            "precision_macro": 0.7856288059077569,
+            "recall_macro": 0.7681481481481481,
+            "f1_macro": 0.7749085806550702,
+            "roc_auc_ovr_macro": 0.9129247795414462,
+            "log_loss": 0.5378663531653926,
+            "multiclass_brier_score": 0.32418060097940604,
+            "confusion_matrix": [
+                [
+                    333,
+                    117,
+                    0
+                ],
+                [
+                    64,
+                    464,
+                    72
+                ],
+                [
+                    1,
+                    93,
+                    356
+                ]
+            ],
+            "classification_report": {
+                "Low": {
+                    "precision": 0.8366834170854272,
+                    "recall": 0.74,
+                    "f1-score": 0.785377358490566,
+                    "support": 450.0
+                },
+                "Medium": {
+                    "precision": 0.6884272997032641,
+                    "recall": 0.7733333333333333,
+                    "f1-score": 0.728414442700157,
+                    "support": 600.0
+                },
+                "High": {
+                    "precision": 0.8317757009345794,
+                    "recall": 0.7911111111111111,
+                    "f1-score": 0.8109339407744874,
+                    "support": 450.0
+                },
+                "accuracy": 0.7686666666666667,
+                "macro avg": {
+                    "precision": 0.7856288059077569,
+                    "recall": 0.768148148148148,
+                    "f1-score": 0.7749085806550702,
+                    "support": 1500.0
+                },
+                "weighted avg": {
+                    "precision": 0.7759086552873076,
+                    "recall": 0.7686666666666667,
+                    "f1-score": 0.7702591668595787,
+                    "support": 1500.0
+                }
+            }
+        }
+    },
+    "final_test_metrics": {
+        "accuracy": 0.7913333333333333,
+        "balanced_accuracy": 0.794074074074074,
+        "precision_macro": 0.8012243089742896,
+        "recall_macro": 0.794074074074074,
+        "f1_macro": 0.7972491307410374,
+        "roc_auc_ovr_macro": 0.9274172839506174,
+        "log_loss": 0.4689832716538086,
+        "multiclass_brier_score": 0.29636981141837926,
+        "confusion_matrix": [
+            [
+                357,
+                93,
+                0
+            ],
+            [
+                70,
+                460,
+                70
+            ],
+            [
+                0,
+                80,
+                370
+            ]
+        ],
+        "classification_report": {
+            "Low": {
+                "precision": 0.8360655737704918,
+                "recall": 0.7933333333333333,
+                "f1-score": 0.814139110604333,
+                "support": 450.0
+            },
+            "Medium": {
+                "precision": 0.7266982622432859,
+                "recall": 0.7666666666666667,
+                "f1-score": 0.7461476074614761,
+                "support": 600.0
+            },
+            "High": {
+                "precision": 0.8409090909090909,
+                "recall": 0.8222222222222222,
+                "f1-score": 0.8314606741573034,
+                "support": 450.0
+            },
+            "accuracy": 0.7913333333333333,
+            "macro avg": {
+                "precision": 0.8012243089742895,
+                "recall": 0.7940740740740742,
+                "f1-score": 0.7972491307410374,
+                "support": 1500.0
+            },
+            "weighted avg": {
+                "precision": 0.7937717043011893,
+                "recall": 0.7913333333333333,
+                "f1-score": 0.7921389784130812,
+                "support": 1500.0
+            }
+        }
+    },
+    "feature_importance": [
+        {
+            "feature": "fasting_glucose",
+            "importance_mean": 0.181862600499538,
+            "importance_std": 0.009023766305158365
+        },
+        {
+            "feature": "hba1c",
+            "importance_mean": 0.0699359465832872,
+            "importance_std": 0.004229135763634677
+        },
+        {
+            "feature": "age",
+            "importance_mean": 0.039758354573661704,
+            "importance_std": 0.007817285108223845
+        },
+        {
+            "feature": "post_meal_glucose",
+            "importance_mean": 0.03769657036484066,
+            "importance_std": 0.0024132781986048136
+        },
+        {
+            "feature": "waist_cm",
+            "importance_mean": 0.022388981179956646,
+            "importance_std": 0.003800713038755926
+        },
+        {
+            "feature": "bmi",
+            "importance_mean": 0.017564760349692454,
+            "importance_std": 0.0035960373005016148
+        }
+    ],
+    "age_group_evaluation": {
+        "18-39": {
+            "records": 507,
+            "accuracy": 0.8047337278106509,
+            "macro_f1": 0.7874784909506923
+        },
+        "40-59": {
+            "records": 446,
+            "accuracy": 0.7668161434977578,
+            "macro_f1": 0.7711117584402897
+        },
+        "60+": {
+            "records": 547,
+            "accuracy": 0.7989031078610603,
+            "macro_f1": 0.779503468453441
+        }
+    },
+    "clinical_validation": false,
+    "warning": "Metrics measure agreement with synthetic demonstration labels and do not establish clinical accuracy."
+}

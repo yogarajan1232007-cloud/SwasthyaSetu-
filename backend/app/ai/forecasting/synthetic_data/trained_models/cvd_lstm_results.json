@@ -1,0 +1,241 @@
+{
+    "model_name": "SwasthyaSetu Cardiovascular LSTM",
+    "dataset_type": "synthetic",
+    "is_real_patient_data": false,
+    "sequence_length": 6,
+    "input_features": [
+        "age",
+        "gender",
+        "bmi",
+        "waist_cm",
+        "systolic_bp",
+        "diastolic_bp",
+        "pulse_rate",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides"
+    ],
+    "target_features": [
+        "systolic_bp",
+        "diastolic_bp",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides"
+    ],
+    "device": "cpu",
+    "epochs_configured": 100,
+    "early_stopping_patience": 10,
+    "lstm_metrics": {
+        "systolic_bp": {
+            "MAE": 2.6262824535369873,
+            "RMSE": 3.309909599429641
+        },
+        "diastolic_bp": {
+            "MAE": 1.6805616617202759,
+            "RMSE": 2.108655227494225
+        },
+        "total_cholesterol": {
+            "MAE": 4.465344429016113,
+            "RMSE": 5.6176380724845325
+        },
+        "hdl": {
+            "MAE": 1.6062288284301758,
+            "RMSE": 2.0228718441974705
+        },
+        "ldl": {
+            "MAE": 4.243747234344482,
+            "RMSE": 5.325301241525054
+        },
+        "triglycerides": {
+            "MAE": 5.95930290222168,
+            "RMSE": 7.451643374662686
+        }
+    },
+    "persistence_metrics": {
+        "systolic_bp": {
+            "MAE": 3.405686616897583,
+            "RMSE": 4.268817531336368
+        },
+        "diastolic_bp": {
+            "MAE": 2.2903223037719727,
+            "RMSE": 2.8629811378148124
+        },
+        "total_cholesterol": {
+            "MAE": 5.835894584655762,
+            "RMSE": 7.335280448893281
+        },
+        "hdl": {
+            "MAE": 2.2594590187072754,
+            "RMSE": 2.836479198329103
+        },
+        "ldl": {
+            "MAE": 5.7676496505737305,
+            "RMSE": 7.227808697447279
+        },
+        "triglycerides": {
+            "MAE": 8.033807754516602,
+            "RMSE": 10.058590336771266
+        }
+    },
+    "linear_trend_metrics": {
+        "systolic_bp": {
+            "MAE": 3.2325182821203153,
+            "RMSE": 4.0686798885705855
+        },
+        "diastolic_bp": {
+            "MAE": 2.1953057426452633,
+            "RMSE": 2.745708914914002
+        },
+        "total_cholesterol": {
+            "MAE": 5.4824676028216315,
+            "RMSE": 6.91664047768194
+        },
+        "hdl": {
+            "MAE": 2.1987869605170363,
+            "RMSE": 2.7406919729400965
+        },
+        "ldl": {
+            "MAE": 5.559260201743797,
+            "RMSE": 6.988901103948227
+        },
+        "triglycerides": {
+            "MAE": 7.637763176529494,
+            "RMSE": 9.569649235572959
+        }
+    },
+    "training_history": [
+        {
+            "epoch": 1,
+            "train_loss": 0.41911177671316896,
+            "validation_loss": 0.2819702898462613
+        },
+        {
+            "epoch": 2,
+            "train_loss": 0.2783109570091421,
+            "validation_loss": 0.2773178724779023
+        },
+        {
+            "epoch": 3,
+            "train_loss": 0.2734347886208332,
+            "validation_loss": 0.27187133497662014
+        },
+        {
+            "epoch": 4,
+            "train_loss": 0.27151039947162975,
+            "validation_loss": 0.2709556718667348
+        },
+        {
+            "epoch": 5,
+            "train_loss": 0.2710993178866126,
+            "validation_loss": 0.2708644163277414
+        },
+        {
+            "epoch": 6,
+            "train_loss": 0.270696021751924,
+            "validation_loss": 0.2687917633189095
+        },
+        {
+            "epoch": 7,
+            "train_loss": 0.2691841492147157,
+            "validation_loss": 0.2693183074394862
+        },
+        {
+            "epoch": 8,
+            "train_loss": 0.26915943577434076,
+            "validation_loss": 0.26930535087982815
+        },
+        {
+            "epoch": 9,
+            "train_loss": 0.26903272894295777,
+            "validation_loss": 0.26914598792791367
+        },
+        {
+            "epoch": 10,
+            "train_loss": 0.2685990478956338,
+            "validation_loss": 0.26888707611295914
+        },
+        {
+            "epoch": 11,
+            "train_loss": 0.2683025875777909,
+            "validation_loss": 0.26962461570898694
+        },
+        {
+            "epoch": 12,
+            "train_loss": 0.2686863830595305,
+            "validation_loss": 0.2691506188776758
+        },
+        {
+            "epoch": 13,
+            "train_loss": 0.26836015582084655,
+            "validation_loss": 0.2693481064505047
+        },
+        {
+            "epoch": 14,
+            "train_loss": 0.26882779119592726,
+            "validation_loss": 0.269876178767946
+        },
+        {
+            "epoch": 15,
+            "train_loss": 0.26814221378528713,
+            "validation_loss": 0.2683376806477706
+        },
+        {
+            "epoch": 16,
+            "train_loss": 0.26837347899422503,
+            "validation_loss": 0.2680391139454312
+        },
+        {
+            "epoch": 17,
+            "train_loss": 0.2680493655529889,
+            "validation_loss": 0.27000833137167823
+        },
+        {
+            "epoch": 18,
+            "train_loss": 0.2683310995499293,
+            "validation_loss": 0.26901407291491825
+        },
+        {
+            "epoch": 19,
+            "train_loss": 0.26789164064508497,
+            "validation_loss": 0.2693282812833786
+        },
+        {
+            "epoch": 20,
+            "train_loss": 0.26817296093160453,
+            "validation_loss": 0.26930905961328083
+        },
+        {
+            "epoch": 21,
+            "train_loss": 0.26787650991569867,
+            "validation_loss": 0.2710043382313516
+        },
+        {
+            "epoch": 22,
+            "train_loss": 0.2679255875674161,
+            "validation_loss": 0.2688835101823012
+        },
+        {
+            "epoch": 23,
+            "train_loss": 0.2672970538789576,
+            "validation_loss": 0.26878431770536637
+        },
+        {
+            "epoch": 24,
+            "train_loss": 0.26876941485838457,
+            "validation_loss": 0.2688922666841083
+        },
+        {
+            "epoch": 25,
+            "train_loss": 0.2674569648323637,
+            "validation_loss": 0.26898035489850575
+        },
+        {
+            "epoch": 26,
+            "train_loss": 0.2681389576557911,
+            "validation_loss": 0.2701732830868827
+        }
+    ],
+    "disclaimer": "Experimental cardiovascular forecasting model trained using synthetic longitudinal data. Not clinically validated."
+}

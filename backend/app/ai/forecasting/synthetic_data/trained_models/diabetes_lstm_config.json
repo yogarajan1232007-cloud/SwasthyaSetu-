@@ -1,0 +1,13 @@
+{
+    "input_size": 6,
+    "hidden_size_1": 64,
+    "hidden_size_2": 32,
+    "output_size": 3,
+    "dropout": 0.2,
+    "sequence_length": 6,
+    "target_features": [
+        "fasting_glucose",
+        "post_meal_glucose",
+        "hba1c"
+    ]
+}

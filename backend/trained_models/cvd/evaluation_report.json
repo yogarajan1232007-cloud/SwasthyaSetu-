@@ -1,0 +1,402 @@
+{
+    "model_type": "cvd_classification",
+    "dataset_type": "synthetic",
+    "validation_status": "experimental",
+    "approval_status": "pending",
+    "is_active": false,
+    "selected_model": "Gradient Boosting",
+    "selection_metric": "validation_macro_f1",
+    "feature_columns": [
+        "age",
+        "bmi",
+        "waist_cm",
+        "systolic_bp",
+        "diastolic_bp",
+        "pulse_rate",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides",
+        "gender"
+    ],
+    "numeric_features": [
+        "age",
+        "bmi",
+        "waist_cm",
+        "systolic_bp",
+        "diastolic_bp",
+        "pulse_rate",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides"
+    ],
+    "categorical_features": [
+        "gender"
+    ],
+    "target_column": "synthetic_demo_category",
+    "split": {
+        "training": 0.7,
+        "validation": 0.15,
+        "testing": 0.15
+    },
+    "cross_validation": {
+        "Logistic Regression": {
+            "mean_macro_f1": 0.6813774392032632,
+            "best_parameters": {
+                "classifier__solver": "lbfgs",
+                "classifier__C": 1.0
+            }
+        },
+        "Random Forest": {
+            "mean_macro_f1": 0.6695350365444799,
+            "best_parameters": {
+                "classifier__n_estimators": 250,
+                "classifier__min_samples_split": 5,
+                "classifier__min_samples_leaf": 1,
+                "classifier__max_depth": 8
+            }
+        },
+        "Gradient Boosting": {
+            "mean_macro_f1": 0.6757546581133054,
+            "best_parameters": {
+                "classifier__subsample": 0.8,
+                "classifier__n_estimators": 100,
+                "classifier__max_depth": 4,
+                "classifier__learning_rate": 0.03
+            }
+        }
+    },
+    "validation_results": {
+        "Logistic Regression": {
+            "accuracy": 0.6686666666666666,
+            "balanced_accuracy": 0.6833333333333332,
+            "precision_macro": 0.6706022858689501,
+            "recall_macro": 0.6833333333333332,
+            "f1_macro": 0.6754618902623929,
+            "roc_auc_ovr_macro": 0.8554825396825397,
+            "log_loss": 0.6821514066873675,
+            "multiclass_brier_score": 0.4231296105826746,
+            "confusion_matrix": [
+                [
+                    338,
+                    108,
+                    4
+                ],
+                [
+                    129,
+                    322,
+                    149
+                ],
+                [
+                    8,
+                    99,
+                    343
+                ]
+            ],
+            "classification_report": {
+                "Low": {
+                    "precision": 0.7115789473684211,
+                    "recall": 0.7511111111111111,
+                    "f1-score": 0.7308108108108108,
+                    "support": 450.0
+                },
+                "Medium": {
+                    "precision": 0.6086956521739131,
+                    "recall": 0.5366666666666666,
+                    "f1-score": 0.5704162976085031,
+                    "support": 600.0
+                },
+                "High": {
+                    "precision": 0.6915322580645161,
+                    "recall": 0.7622222222222222,
+                    "f1-score": 0.7251585623678647,
+                    "support": 450.0
+                },
+                "accuracy": 0.6686666666666666,
+                "macro avg": {
+                    "precision": 0.6706022858689501,
+                    "recall": 0.6833333333333332,
+                    "f1-score": 0.6754618902623929,
+                    "support": 1500.0
+                },
+                "weighted avg": {
+                    "precision": 0.6644116224994464,
+                    "recall": 0.6686666666666666,
+                    "f1-score": 0.6649573309970039,
+                    "support": 1500.0
+                }
+            }
+        },
+        "Random Forest": {
+            "accuracy": 0.6733333333333333,
+            "balanced_accuracy": 0.6853703703703703,
+            "precision_macro": 0.6768075465126735,
+            "recall_macro": 0.6853703703703703,
+            "f1_macro": 0.6804285859681963,
+            "roc_auc_ovr_macro": 0.848715343915344,
+            "log_loss": 0.7146459512058881,
+            "multiclass_brier_score": 0.43482031572323193,
+            "confusion_matrix": [
+                [
+                    336,
+                    108,
+                    6
+                ],
+                [
+                    122,
+                    339,
+                    139
+                ],
+                [
+                    9,
+                    106,
+                    335
+                ]
+            ],
+            "classification_report": {
+                "Low": {
+                    "precision": 0.7194860813704497,
+                    "recall": 0.7466666666666667,
+                    "f1-score": 0.732824427480916,
+                    "support": 450.0
+                },
+                "Medium": {
+                    "precision": 0.6130198915009042,
+                    "recall": 0.565,
+                    "f1-score": 0.588031222896791,
+                    "support": 600.0
+                },
+                "High": {
+                    "precision": 0.6979166666666666,
+                    "recall": 0.7444444444444445,
+                    "f1-score": 0.7204301075268817,
+                    "support": 450.0
+                },
+                "accuracy": 0.6733333333333333,
+                "macro avg": {
+                    "precision": 0.6768075465126735,
+                    "recall": 0.6853703703703703,
+                    "f1-score": 0.6804285859681963,
+                    "support": 1500.0
+                },
+                "weighted avg": {
+                    "precision": 0.6704287810114965,
+                    "recall": 0.6733333333333333,
+                    "f1-score": 0.6711888496610557,
+                    "support": 1500.0
+                }
+            }
+        },
+        "Gradient Boosting": {
+            "accuracy": 0.6773333333333333,
+            "balanced_accuracy": 0.6768518518518518,
+            "precision_macro": 0.6991220761753417,
+            "recall_macro": 0.6768518518518518,
+            "f1_macro": 0.6851793421685896,
+            "roc_auc_ovr_macro": 0.84636278659612,
+            "log_loss": 0.7170120954401943,
+            "multiclass_brier_score": 0.43179769652430877,
+            "confusion_matrix": [
+                [
+                    296,
+                    150,
+                    4
+                ],
+                [
+                    88,
+                    409,
+                    103
+                ],
+                [
+                    3,
+                    136,
+                    311
+                ]
+            ],
+            "classification_report": {
+                "Low": {
+                    "precision": 0.7648578811369509,
+                    "recall": 0.6577777777777778,
+                    "f1-score": 0.7072879330943848,
+                    "support": 450.0
+                },
+                "Medium": {
+                    "precision": 0.5884892086330935,
+                    "recall": 0.6816666666666666,
+                    "f1-score": 0.6316602316602317,
+                    "support": 600.0
+                },
+                "High": {
+                    "precision": 0.7440191387559809,
+                    "recall": 0.6911111111111111,
+                    "f1-score": 0.716589861751152,
+                    "support": 450.0
+                },
+                "accuracy": 0.6773333333333333,
+                "macro avg": {
+                    "precision": 0.6991220761753417,
+                    "recall": 0.6768518518518518,
+                    "f1-score": 0.6851793421685896,
+                    "support": 1500.0
+                },
+                "weighted avg": {
+                    "precision": 0.688058789421117,
+                    "recall": 0.6773333333333333,
+                    "f1-score": 0.6798274311177537,
+                    "support": 1500.0
+                }
+            }
+        }
+    },
+    "final_test_metrics": {
+        "accuracy": 0.6646666666666666,
+        "balanced_accuracy": 0.6675925925925926,
+        "precision_macro": 0.6810019294405106,
+        "recall_macro": 0.6675925925925926,
+        "f1_macro": 0.6732416154262691,
+        "roc_auc_ovr_macro": 0.8399466490299824,
+        "log_loss": 0.7269459900922566,
+        "multiclass_brier_score": 0.44166603845820523,
+        "confusion_matrix": [
+            [
+                312,
+                135,
+                3
+            ],
+            [
+                104,
+                383,
+                113
+            ],
+            [
+                5,
+                143,
+                302
+            ]
+        ],
+        "classification_report": {
+            "Low": {
+                "precision": 0.7410926365795725,
+                "recall": 0.6933333333333334,
+                "f1-score": 0.7164179104477612,
+                "support": 450.0
+            },
+            "Medium": {
+                "precision": 0.5794251134644478,
+                "recall": 0.6383333333333333,
+                "f1-score": 0.6074544012688342,
+                "support": 600.0
+            },
+            "High": {
+                "precision": 0.722488038277512,
+                "recall": 0.6711111111111111,
+                "f1-score": 0.695852534562212,
+                "support": 450.0
+            },
+            "accuracy": 0.6646666666666666,
+            "macro avg": {
+                "precision": 0.6810019294405109,
+                "recall": 0.6675925925925926,
+                "f1-score": 0.673241615426269,
+                "support": 1500.0
+            },
+            "weighted avg": {
+                "precision": 0.6708442478429044,
+                "recall": 0.6646666666666666,
+                "f1-score": 0.6666628940105256,
+                "support": 1500.0
+            }
+        }
+    },
+    "feature_importance": [
+        {
+            "feature": "systolic_bp",
+            "importance_mean": 0.11794417305526952,
+            "importance_std": 0.005684633610384614
+        },
+        {
+            "feature": "age",
+            "importance_mean": 0.10386583647721628,
+            "importance_std": 0.009115675585641659
+        },
+        {
+            "feature": "ldl",
+            "importance_mean": 0.0780089999371604,
+            "importance_std": 0.005721953984530479
+        },
+        {
+            "feature": "triglycerides",
+            "importance_mean": 0.021418333661429846,
+            "importance_std": 0.004619027365604605
+        },
+        {
+            "feature": "total_cholesterol",
+            "importance_mean": 0.009056925857153186,
+            "importance_std": 0.004001923844150424
+        },
+        {
+            "feature": "diastolic_bp",
+            "importance_mean": 0.009050644950017773,
+            "importance_std": 0.0025819067128099696
+        },
+        {
+            "feature": "hdl",
+            "importance_mean": 0.007721846561044954,
+            "importance_std": 0.0030022331090556464
+        },
+        {
+            "feature": "bmi",
+            "importance_mean": 0.0030163665146282215,
+            "importance_std": 0.0010804904556446818
+        },
+        {
+            "feature": "waist_cm",
+            "importance_mean": 0.0027243793120748316,
+            "importance_std": 0.0012690341972879556
+        },
+        {
+            "feature": "gender",
+            "importance_mean": 0.0005423195877827247,
+            "importance_std": 0.00027115979389136236
+        },
+        {
+            "feature": "pulse_rate",
+            "importance_mean": -0.0025086468846737377,
+            "importance_std": 0.0007621246514753659
+        }
+    ],
+    "subgroup_evaluation": {
+        "age_groups": {
+            "18-39": {
+                "records": 501,
+                "accuracy": 0.6926147704590818,
+                "macro_f1": 0.5672789694929916
+            },
+            "40-59": {
+                "records": 423,
+                "accuracy": 0.6477541371158393,
+                "macro_f1": 0.6442199775533108
+            },
+            "60+": {
+                "records": 576,
+                "accuracy": 0.6527777777777778,
+                "macro_f1": 0.5915877239547286
+            }
+        },
+        "gender_groups": {
+            "Female": {
+                "records": 759,
+                "accuracy": 0.6745718050065876,
+                "macro_f1": 0.6827646106802995
+            },
+            "Male": {
+                "records": 741,
+                "accuracy": 0.6545209176788124,
+                "macro_f1": 0.6634540267928112
+            }
+        }
+    },
+    "clinical_validation": false,
+    "warning": "Metrics measure agreement with synthetic demonstration labels and do not establish clinical accuracy."
+}

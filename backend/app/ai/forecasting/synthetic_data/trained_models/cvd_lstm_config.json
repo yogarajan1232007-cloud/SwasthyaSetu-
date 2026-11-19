@@ -1,0 +1,16 @@
+{
+    "input_size": 11,
+    "hidden_size_1": 64,
+    "hidden_size_2": 32,
+    "output_size": 6,
+    "dropout": 0.2,
+    "sequence_length": 6,
+    "target_features": [
+        "systolic_bp",
+        "diastolic_bp",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides"
+    ]
+}

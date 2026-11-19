@@ -1,0 +1,42 @@
+{
+    "model_name": "SwasthyaSetu Cardiovascular LSTM",
+    "dataset_type": "synthetic",
+    "is_real_patient_data": false,
+    "total_records": 120000,
+    "total_individuals": 10000,
+    "sequence_length": 6,
+    "expected_visits_per_individual": 12,
+    "gender_mapping": {
+        "Female": 0,
+        "Male": 1
+    },
+    "input_features": [
+        "age",
+        "gender",
+        "bmi",
+        "waist_cm",
+        "systolic_bp",
+        "diastolic_bp",
+        "pulse_rate",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides"
+    ],
+    "target_features": [
+        "systolic_bp",
+        "diastolic_bp",
+        "total_cholesterol",
+        "hdl",
+        "ldl",
+        "triglycerides"
+    ],
+    "train_individuals": 7000,
+    "validation_individuals": 1500,
+    "test_individuals": 1500,
+    "train_sequences": 42000,
+    "validation_sequences": 9000,
+    "test_sequences": 9000,
+    "random_state": 42,
+    "disclaimer": "Experimental synthetic cardiovascular forecasting data. Not clinically validated."
+}

@@ -1,0 +1,187 @@
+{
+    "model_name": "SwasthyaSetu Diabetes LSTM",
+    "dataset_type": "synthetic",
+    "is_real_patient_data": false,
+    "sequence_length": 6,
+    "input_features": [
+        "age",
+        "bmi",
+        "waist_cm",
+        "fasting_glucose",
+        "post_meal_glucose",
+        "hba1c"
+    ],
+    "target_features": [
+        "fasting_glucose",
+        "post_meal_glucose",
+        "hba1c"
+    ],
+    "device": "cpu",
+    "epochs_configured": 100,
+    "early_stopping_patience": 10,
+    "lstm_metrics": {
+        "fasting_glucose": {
+            "MAE": 2.6303160190582275,
+            "RMSE": 3.2905958502221924
+        },
+        "post_meal_glucose": {
+            "MAE": 4.7935614585876465,
+            "RMSE": 6.010478089369678
+        },
+        "hba1c": {
+            "MAE": 0.10533299297094345,
+            "RMSE": 0.1324190595209371
+        }
+    },
+    "persistence_metrics": {
+        "fasting_glucose": {
+            "MAE": 3.4422855377197266,
+            "RMSE": 4.31316934449733
+        },
+        "post_meal_glucose": {
+            "MAE": 6.588860988616943,
+            "RMSE": 8.272512526492575
+        },
+        "hba1c": {
+            "MAE": 0.1275722235441208,
+            "RMSE": 0.16149148613489236
+        }
+    },
+    "linear_trend_metrics": {
+        "fasting_glucose": {
+            "MAE": 3.2677145097520617,
+            "RMSE": 4.099661000391484
+        },
+        "post_meal_glucose": {
+            "MAE": 6.270591301755551,
+            "RMSE": 7.880891218610051
+        },
+        "hba1c": {
+            "MAE": 0.11862451913974903,
+            "RMSE": 0.14868319708198438
+        }
+    },
+    "training_history": [
+        {
+            "epoch": 1,
+            "train_loss": 0.3270239263321414,
+            "validation_loss": 0.17288145505719715
+        },
+        {
+            "epoch": 2,
+            "train_loss": 0.170401603344715,
+            "validation_loss": 0.168576972766055
+        },
+        {
+            "epoch": 3,
+            "train_loss": 0.16754163413336784,
+            "validation_loss": 0.1661020786397987
+        },
+        {
+            "epoch": 4,
+            "train_loss": 0.1657528804107146,
+            "validation_loss": 0.16604074628816712
+        },
+        {
+            "epoch": 5,
+            "train_loss": 0.16537918005928848,
+            "validation_loss": 0.16450350193513763
+        },
+        {
+            "epoch": 6,
+            "train_loss": 0.16461970137827325,
+            "validation_loss": 0.16501139104366302
+        },
+        {
+            "epoch": 7,
+            "train_loss": 0.16442395918297045,
+            "validation_loss": 0.16533348129855263
+        },
+        {
+            "epoch": 8,
+            "train_loss": 0.16379693240830392,
+            "validation_loss": 0.16447528617249596
+        },
+        {
+            "epoch": 9,
+            "train_loss": 0.16409355040752527,
+            "validation_loss": 0.164834287431505
+        },
+        {
+            "epoch": 10,
+            "train_loss": 0.1634926620757941,
+            "validation_loss": 0.16640066355466843
+        },
+        {
+            "epoch": 11,
+            "train_loss": 0.16361720688415296,
+            "validation_loss": 0.1636683170994123
+        },
+        {
+            "epoch": 12,
+            "train_loss": 0.16339909000830216,
+            "validation_loss": 0.1645006500184536
+        },
+        {
+            "epoch": 13,
+            "train_loss": 0.16357464961933368,
+            "validation_loss": 0.16412845833433998
+        },
+        {
+            "epoch": 14,
+            "train_loss": 0.16349755335937846,
+            "validation_loss": 0.16347771883010864
+        },
+        {
+            "epoch": 15,
+            "train_loss": 0.16344974573814508,
+            "validation_loss": 0.1643510800268915
+        },
+        {
+            "epoch": 16,
+            "train_loss": 0.16272410321416278,
+            "validation_loss": 0.1638235424955686
+        },
+        {
+            "epoch": 17,
+            "train_loss": 0.16284867452852653,
+            "validation_loss": 0.1640600748360157
+        },
+        {
+            "epoch": 18,
+            "train_loss": 0.16336925120064708,
+            "validation_loss": 0.1646788116130564
+        },
+        {
+            "epoch": 19,
+            "train_loss": 0.16296858408234335,
+            "validation_loss": 0.16457313837276566
+        },
+        {
+            "epoch": 20,
+            "train_loss": 0.16281932691733042,
+            "validation_loss": 0.16490840332375634
+        },
+        {
+            "epoch": 21,
+            "train_loss": 0.16298222749522237,
+            "validation_loss": 0.16409006466468176
+        },
+        {
+            "epoch": 22,
+            "train_loss": 0.16244331187371053,
+            "validation_loss": 0.1639461223449972
+        },
+        {
+            "epoch": 23,
+            "train_loss": 0.1631527484366388,
+            "validation_loss": 0.16541910957958963
+        },
+        {
+            "epoch": 24,
+            "train_loss": 0.16328023365049651,
+            "validation_loss": 0.1640276706053151
+        }
+    ],
+    "disclaimer": "Experimental model trained on synthetic longitudinal data. Not clinically validated."
+}

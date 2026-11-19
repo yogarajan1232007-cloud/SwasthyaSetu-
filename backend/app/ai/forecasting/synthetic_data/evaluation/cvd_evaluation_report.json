@@ -1,0 +1,113 @@
+{
+    "model_name": "SwasthyaSetu Cardiovascular LSTM",
+    "dataset_type": "synthetic",
+    "is_real_patient_data": false,
+    "test_samples": 9000,
+    "metrics": {
+        "systolic_bp": {
+            "MAE": 2.6262824535369873,
+            "RMSE": 3.309909599429641,
+            "R2": 0.8387501239776611,
+            "actual_mean": 115.67195892333984,
+            "predicted_mean": 115.78771209716797,
+            "actual_min": 85.0,
+            "actual_max": 149.58999633789062,
+            "predicted_min": 87.87630462646484,
+            "predicted_max": 147.15113830566406
+        },
+        "diastolic_bp": {
+            "MAE": 1.6805616617202759,
+            "RMSE": 2.108655227494225,
+            "R2": 0.7143824100494385,
+            "actual_mean": 75.85884857177734,
+            "predicted_mean": 75.88021850585938,
+            "actual_min": 58.52000045776367,
+            "actual_max": 91.81999969482422,
+            "predicted_min": 63.41268539428711,
+            "predicted_max": 90.10552978515625
+        },
+        "total_cholesterol": {
+            "MAE": 4.465344429016113,
+            "RMSE": 5.6176380724845325,
+            "R2": 0.844571590423584,
+            "actual_mean": 174.70913696289062,
+            "predicted_mean": 174.67088317871094,
+            "actual_min": 112.61000061035156,
+            "actual_max": 231.8699951171875,
+            "predicted_min": 122.41792297363281,
+            "predicted_max": 223.76609802246094
+        },
+        "hdl": {
+            "MAE": 1.6062288284301758,
+            "RMSE": 2.0228718441974705,
+            "R2": 0.47288453578948975,
+            "actual_mean": 54.980194091796875,
+            "predicted_mean": 55.05180740356445,
+            "actual_min": 44.959999084472656,
+            "actual_max": 64.83999633789062,
+            "predicted_min": 49.882728576660156,
+            "predicted_max": 59.58197784423828
+        },
+        "ldl": {
+            "MAE": 4.243747234344482,
+            "RMSE": 5.325301241525054,
+            "R2": 0.6997215747833252,
+            "actual_mean": 108.3110580444336,
+            "predicted_mean": 108.26165771484375,
+            "actual_min": 69.98999786376953,
+            "actual_max": 149.75,
+            "predicted_min": 74.44441223144531,
+            "predicted_max": 139.40792846679688
+        },
+        "triglycerides": {
+            "MAE": 5.95930290222168,
+            "RMSE": 7.451643374662686,
+            "R2": 0.8053563833236694,
+            "actual_mean": 124.68161010742188,
+            "predicted_mean": 124.35578155517578,
+            "actual_min": 54.730003356933594,
+            "actual_max": 194.44000244140625,
+            "predicted_min": 69.16714477539062,
+            "predicted_max": 184.0018310546875
+        }
+    },
+    "prediction_checks": {
+        "systolic_bp": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 87.87630462646484,
+            "maximum_prediction": 147.15113830566406
+        },
+        "diastolic_bp": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 63.41268539428711,
+            "maximum_prediction": 90.10552978515625
+        },
+        "total_cholesterol": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 122.41792297363281,
+            "maximum_prediction": 223.76609802246094
+        },
+        "hdl": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 49.882728576660156,
+            "maximum_prediction": 59.58197784423828
+        },
+        "ldl": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 74.44441223144531,
+            "maximum_prediction": 139.40792846679688
+        },
+        "triglycerides": {
+            "all_finite": true,
+            "negative_predictions": 0,
+            "minimum_prediction": 69.16714477539062,
+            "maximum_prediction": 184.0018310546875
+        }
+    },
+    "disclaimer": "Experimental cardiovascular forecasting model evaluated using synthetic test data. Not clinically validated."
+}

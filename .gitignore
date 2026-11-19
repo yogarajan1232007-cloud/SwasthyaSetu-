@@ -1,0 +1,27 @@
+.env
+**/.env
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+**/uploads/
+.pytest_cache/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+**/build/
+.idea/
+.vscode/
+
+# Secrets and signing keys
+.env.*
+!*.env.example
+**/key.properties
+*.jks
+*.keystore

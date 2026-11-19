@@ -1,0 +1,30 @@
+{
+    "model_name": "SwasthyaSetu Diabetes LSTM",
+    "dataset_type": "synthetic",
+    "is_real_patient_data": false,
+    "total_records": 120000,
+    "total_individuals": 10000,
+    "sequence_length": 6,
+    "expected_visits_per_individual": 12,
+    "input_features": [
+        "age",
+        "bmi",
+        "waist_cm",
+        "fasting_glucose",
+        "post_meal_glucose",
+        "hba1c"
+    ],
+    "target_features": [
+        "fasting_glucose",
+        "post_meal_glucose",
+        "hba1c"
+    ],
+    "train_individuals": 7000,
+    "validation_individuals": 1500,
+    "test_individuals": 1500,
+    "train_sequences": 42000,
+    "validation_sequences": 9000,
+    "test_sequences": 9000,
+    "random_state": 42,
+    "disclaimer": "Experimental synthetic forecasting data. Not clinically validated."
+}
